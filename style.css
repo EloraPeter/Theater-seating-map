@@ -1,0 +1,95 @@
+* {
+    color: #fff;
+}
+
+
+body {
+    margin: 20px;
+    background-image: url(image/istockphoto-1295114854-612x612.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.Movieschoosing{
+    margin-top: 20px;
+}
+.Movieschoosing option{
+    color: black;
+}
+.Movieschoosing input{
+    color: black;
+}
+
+.status{
+    margin-top: 15px;
+    display: flex;
+}
+
+.status .seat{
+    margin-right: 20px;
+}
+
+.status p{
+    margin-top: 30px;
+    font-size: 11px;
+}
+
+.seat-map {
+    display: grid;
+    gap: 5px;
+    padding: 20px;
+}
+
+.seat {
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.seat.reserved {
+    background-color: red;
+    cursor: not-allowed;
+}
+
+.seat.selected {
+    background-color: yellow;
+}
+
+button{
+    margin-left: 40px;
+    position: absolute;
+    padding: 5px 12px;
+    justify-items: center;
+    text-align: center;
+    border-radius: 50px;
+    border-color: #fff;
+    background-color: rgb(7, 183, 7);
+    color: #fff;
+    cursor: pointer;
+    
+    
+}
+
+button:hover{
+    transform:scale(1.2);
+}
+
+@media (min-width: 768px) {
+    .seat-map {
+        grid-template-columns: repeat(10, 30px);
+    }
+}
+
+@media (max-width: 767px) {
+    .seat-map {
+        grid-template-columns: repeat(5, 30px);
+    }
+}

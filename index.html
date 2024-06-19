@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theater Seat Map</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="title">
+        <h1>Theather Online Booking Platform</h1>
+    </div>
+
+    <div class="Movieschoosing">
+
+        <label for="">Movies Available :</label>
+        <select name="" id="origin" style="color: black;">
+            <option value="1">Avatar</option>
+            <option value="2">Aquaman</option>
+            <option value="3">Moana</option>
+            <option value="4">Gifted</option>
+            <option value="5">The Good Doctor</option>
+            <option value="6">Prison Break</option>
+            <option value="7">Now You See Me</option>
+        </select>
+
+        <label for="">Date and Time :</label>
+        <select name="" id="Screenday" style="color: black;">
+            <option value="" id="" disabled selected hidden>Day to watch</option>
+            <option value="">16th june, 2024</option>
+            <option value="">26th june, 2024</option>
+            <option value="">30th june, 2024</option>
+        </select>
+
+        
+        <label for="">Time :</label>
+        <select name="" id="Screentime" style="color: black;">
+            <option value="" id="" disabled selected hidden>When to watch</option>
+            <option value="">6:30pm-7:45pm</option>
+            <option value="">8:30am-7:45am</option>
+            <option value="">11:50am-12:15pm</option>
+        </select>
+
+    </div>
+
+    <div class="status">
+
+        <div class="seat">
+            <p>Available</p>
+        </div>
+
+        <div class="seat selected">
+            <p>Select</p>
+        </div>
+        <div class="seat reserved">
+            <p>Unavailable</p>
+        </div>
+
+    </div>
+
+    <section class="seat-map">
+        <!-- This is where the seat map will be dynamically generated -->
+    </section>
+
+
+
+    <div class="summary">
+
+        <p class="text">Seat Price : <span id="priceperseat">&nbsp;</span> NGN &nbsp; | &nbsp;
+            Seat selected :
+            <span id="count">0</span> seat &nbsp;|&nbsp;
+            Total payment : <span id="total">0</span> NGN
+            <button id="back-button" style="display:none;">Back to Areas</button>
+        </p>
+        <button id="reserve-button" style="display:none;">Reserve Seat </button>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
